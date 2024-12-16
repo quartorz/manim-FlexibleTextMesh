@@ -1,0 +1,9 @@
+services:
+  manim-flexibletextmesh:
+    image: manim-flexibletextmesh
+    container_name: manim-flexibletextmesh
+    build: .
+    volumes:
+      - ./src:/manim
+    stdin_open: true
+    tty: true
